@@ -24,11 +24,21 @@ module.exports = function(app) {
     app.put("/api/workouts/:id", (req, res) => {
       db.Workout.findByIdAndUpdate(req.params.id, 
         { 
-          $push: { exercise: body }
+          $push: { exercise: req.body }
         }, 
         { 
-          new: ture 
+          new: true 
         })
+        .then(dbWorkout => {
+          res.json(dbWorkout);
+        })
+        .catch(err => {
+          res.json(err);
+        });
+    });
+
+    app.get("/api/workouts/range", (req, res) => {
+      db.Workout.find({})
         .then(dbWorkout => {
           res.json(dbWorkout);
         })
