@@ -22,7 +22,9 @@ module.exports = function(app) {
     });
 
     app.put("/api/workouts/:id", (req, res) => {
-      db.Workout.findByIdAndUpdate(req.params.id, 
+      db.Workout.findByIdAndUpdate({
+          _id: req.params.id,
+        },
         { 
           $push: { exercise: req.body }
         }, 
