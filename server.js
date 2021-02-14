@@ -2,10 +2,9 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 8080;
 
-// const db = require("./models");
-// const { urlencoded } = require("express");
+// require("./models");
 
 const app = express();
 
@@ -25,7 +24,6 @@ mongoose.connect(
       useFindAndModify: false
     }
   );
-  
 
 require("./routes/html-routes")(app);
 require("./routes/api-routes")(app);

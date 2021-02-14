@@ -26,7 +26,7 @@ module.exports = function(app) {
           _id: req.params.id,
         },
         { 
-          $push: { exercise: req.body }
+          $push: { exercises: req.body }
         }, 
         { 
           new: true 
