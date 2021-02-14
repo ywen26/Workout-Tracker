@@ -26,6 +26,18 @@ The user should be able to:
 * Mongoose - npm
 * Morgan - npm
 
+## Appearance and Functionality
+
+Below is the page to display current day's workouts summary:
+![Demo](./public/assets/img/sc-17-1.png)
+
+And the page to display workouts data comparison:
+![Demo](./public/assets/img/sc-17-2.png)
+
+Here is the deployed link of the application: [Eat Da Burger!](https://sleepy-sea-64053.herokuapp.com/)
+
+You can also explore this application through my [portfolio](https://ywen26.github.io/Personal-Portfolio/).
+
 ## URL Sources
 
 Feel free to check the application repository: [https://github.com/ywen26/Workout-Tracker](https://github.com/ywen26/Workout-Tracker)
