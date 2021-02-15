@@ -34,9 +34,7 @@ Below is the page to display current day's workouts summary:
 And the page to display workouts data comparison:
 ![Demo](./public/assets/img/sc-17-2.png)
 
-Here is the deployed link of the application: [Eat Da Burger!](https://sleepy-sea-64053.herokuapp.com/)
-
-You can also explore this application through my [portfolio](https://ywen26.github.io/Personal-Portfolio/).
+Here is the deployed link of the application: [Workout Tracker](https://thawing-refuge-56439.herokuapp.com/)
 
 ## URL Sources
 
